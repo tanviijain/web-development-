@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+<html>
+<body>
+<h2>CSE</h2>
+<p>Branch</p>
+<p id="test1"></p>
+<p id="test2"></p>
+<p id="test3"></p>
+<script>
+var a = 7;
+var b =4;
+//and logical operator
+document.getElementById("test1").innerHTML = (a < 10 && b > 1) + "<br>" + 
+(a < 10 && b < 1); 
+//or logical operator
+document.getElementById("test2").innerHTML = 
+(a == 5 || b == 5) + "<br>" + 
+(a == 7 || b == 0) + "<br>" + 
+(a == 0 || b == 4) + "<br>" + 
+(a == 7 || b == 4); 
+// not logical operator
+document.getElementById("test3").innerHTML = 
+!(a === b) + "<br>" + 
+!(a > b); 
+</script>
+</body>
+</html>

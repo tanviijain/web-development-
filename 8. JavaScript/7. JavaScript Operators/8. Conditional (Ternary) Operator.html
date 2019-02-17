@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<html>
+<body>
+<p>Input weight</p>
+
+<input id="weight" value="50" />
+
+<button onclick="myweight()">Click</button>
+
+<p id="test"></p>
+
+<script>
+function myweight() {
+  var weight, weightlifting;
+  weight = document.getElementById("weight").value;
+  weightlifting = (weight < 50) ? "under weight":"over weight";
+  document.getElementById("test").innerHTML = weightlifting + " to participate";
+}
+</script>
+</body>
+</html>
